@@ -1,0 +1,116 @@
+:root{
+    --color-primario: #007bff;
+    --color-fondo-header: var(--color-primario);
+    --color-texto-header: white;
+    --color-azul-body: rgba(0, 139, 191, 1); 
+    --color-gris-body: rgba(255, 255, 255, 0.4);
+    --color-logo-sombra: rgba(83, 175, 236, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Seleccionar la etiqueta body y definir estilo de fuente y fondo. */
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,var(--color-azul-body), var(--color-gris-body), var(--color-azul-body));
+}
+
+/* Selecciona el encabezado por etiqueta y definir el color de
+fondo, color del texto del encabezado (header). Alinear el contenido
+del encabezado al centro. */
+header{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    text-align: center;
+}
+
+/* 5. Asignar una id llamada logo y seleccionar id
+Aplica estilos ancho, alto, hacer el logo circular, 
+separar el logo del menú especificando margen a la derecha (FINAL). */
+#logo{
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    margin-right: 500px;
+}
+
+/* 6. Seleccionar del header el menu y la división para 
+cambiar el comportamiento en bloque para que esten en
+la misma linea y que queden verticalmente alineados
+dentro el contenedor. */
+header div,
+header nav{
+    display: inline;
+    vertical-align: middle;
+}
+
+/* 7. Selecionar por etiquetas que los hiperviculos del
+menu de navegación se le agregará color, eliminar
+toda decoración del texto(subrayado) y margen sólo
+a los costados, superior e inferior nada. */
+.hipervin{
+    color:var(--color-texto-header);
+    text-decoration: none;
+    margin: 0 10px
+}
+
+/* 8. Estilos para el texto h1, seleccionar la clase: agregar
+tamaño de fuente, alinear texto al centro, agregar imagen 
+al texto, configurar la imagen para no repetir, posicionarla
+al centro, definir color al txto transparente, margen y agregar
+background-clip: text; se utiliza para especificar cómo se
+debe aplicar un fondo a un elemento de texto.
+Cuando se establece en text, el fondo se recorta para
+que solo se muestre detrás del texto, en lugar de ocupar
+todo el espacio del elemento.*/
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    background-image: url('../img/bandera.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+    background-clip: text;
+}
+
+/* 9. Seleccionar el id de la sección con fondo y definir:
+imagen de fondo,tamaño, posición, color, alinear texto, alto margen
+y relleno cero. */
+#seccion-con-fondo{
+    background-image: url('../img/beautiful-shot-moreno-glacier-santa-cruz-argentina.jpg');
+    background-size: cover;/*Ajuste la img al contenedor*/
+    background-position: center;
+    color:#fff;
+    text-align: center;
+    height: 100vh;
+}
+
+/* 10. Seleccionar la clase contenido y definir:
+margen, relleno, alinear texto y color al texto. */
+.contenido{
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+}
+
+/* 11. Seleccionar el id del párrafo del bloque-3 y definir:
+margen y alinear el texto. */
+#p-bloque3{
+    text-align: justify;
+    margin: 50px;
+}
+
+/* 12. Selccionar la etiqueta del pie de página
+y definir: color de fondo, color, relleno, alinear
+el texto al centro. */
+footer{
+    background-color: var(--color-fondo-header);
+    color:var(--color-texto-header);
+    text-align: center;
+    padding: 10px;
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+
+    <h2>Formulario de Registro</h2>
+    <form action="">
+        <div>
+            <label for="firstname">Nombre:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Ingrese su nombre aquí...">
+        </div>
+        <div>
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Ingrese su apellido aquí...">
+        </div>
+        <div>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" placeholder="Ingrese su dirección aquí...">
+        </div>
+        <div>
+            <label for="number">Número:</label>
+            <input type="number" id="number" name="number" placeholder="Ingrese el número...">
+        </div>
+        <div>
+            <label for="city">Ciudad:</label>
+            <input type="text" id="city" name="city" value="C.A.B.A.">
+        </div>
+        <div>
+            <label for="zipcode">Código Postal:</label>
+            <input type="text" id="zipcode" name="zipcode" placeholder="Ingrese su código postal aquí...">
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono aquí...">
+        </div>
+        <div>
+            <label for="birthdate">Fecha de Nacimiento:</label>
+            <input type="date" id="birthdate" name="birthdate">
+        </div>
+        <div>
+            <label for="clave">Clave:</label>
+            <input type="password" id="clave" name="clave">
+        </div>
+        <div>
+            <label for="mail">Correo Electrónico:</label>
+            <input type="email" id="mail" name="mail">
+        </div>
+        <div>
+            <label for="url">Link del TP 3:</label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <p>Género:</p>
+            <input type="radio" id="hombre" name="gender" value="Hombre" checked>
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="mujer" name="gender" value="Mujer">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="otro" name="gender" value="Otro">
+            <label for="otro">Otro</label>
+        </div>
+        <div>
+            <p>Conocimientos Previos:</p>
+            <input type="checkbox" id="html" name="conocimientos" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="conocimientos" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="bootstrap" name="conocimientos" value="Bootstrap">
+            <label for="bootstrap">Bootstrap</label><br>
+            <input type="checkbox" id="javascript" name="conocimientos" value="Javascript">
+            <label for="javascript">Javascript</label><br>
+            <input type="checkbox" id="typescript" name="conocimientos" value="Typescript">
+            <label for="typescript">Typescript</label><br>
+            <input type="checkbox" id="angular" name="conocimientos" value="Angular">
+            <label for="angular">Angular</label><br>
+            <input type="checkbox" id="basededatos" name="conocimientos" value="Base de Datos">
+            <label for="basededatos">Base de Datos</label><br>
+            <input type="checkbox" id="python" name="conocimientos" value="Python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="django" name="conocimientos" value="Django">
+            <label for="django">Django</label>
+        </div>
+        <div>
+            <label for="estudios">Estudios:</label>
+            <select id="estudios" name="estudios">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
